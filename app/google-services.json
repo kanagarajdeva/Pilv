@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "432082947269",
+    "project_id": "pilvchat",
+    "storage_bucket": "pilvchat.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432082947269:android:303e56d20c4a597d54b4ac",
+        "android_client_info": {
+          "package_name": "com.pilv.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuc7pY4VFesQN6P6GV6S0c1ID1o3x11fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

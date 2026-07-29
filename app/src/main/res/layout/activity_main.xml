@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A1628">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1A2A3A"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="☁️ pilv"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Mental Health Button - No background, small -->
+            <TextView
+                android:id="@+id/mentalHealthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧘"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="2dp" />
+
+            <!-- Next Button - No background, small -->
+            <TextView
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏭️"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="2dp" />
+
+            <!-- Icebreaker Button - No background, small -->
+            <TextView
+                android:id="@+id/icebreakerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❓"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="2dp" />
+
+            <!-- Timer -->
+            <TextView
+                android:id="@+id/cloudTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24:00:00"
+                android:textColor="#7EC8E3"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Connection Status -->
+    <TextView
+        android:id="@+id/connectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="☁️ Connected to someone"
+        android:textColor="#7EC8E3"
+        android:textSize="13sp"
+        android:background="#0A1628"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <!-- Chat Messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:clipToPadding="false" />
+
+    <!-- Message Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#1A2A3A"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Message..."
+            android:background="#2A3A5A"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#666666"
+            android:maxLines="5"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_send"
+            android:background="#4A90D9"
+            android:layout_marginStart="8dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#4A90D9" />
+
+</LinearLayout>
